@@ -1,0 +1,4473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1947</width>
+    <height>3664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1000</width>
+     <height>1000</height>
+    </size>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1911</width>
+      <height>2231</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1080</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <attribute name="title">
+      <string>BR Feasibility Summary</string>
+     </attribute>
+     <widget class="QFrame" name="br_input">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>311</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="br_Output">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>340</y>
+        <width>311</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>1171</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1169</width>
+         <height>859</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;BR Feasibility Summary&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="br_input_table">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>291</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+       <widget class="QPushButton" name="br_submit">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>260</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="br_input_table_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>291</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="assumptions1Tab">
+     <attribute name="title">
+      <string>Assumptions 1</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollAreaAssumtions">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>781</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-1699</y>
+         <width>1882</width>
+         <height>2922</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>2090</y>
+          <width>142</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Energy / Fuel (USD / litre)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptionsTableMKLink_Boiklep">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>850</y>
+          <width>1861</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>2320</y>
+          <width>258</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;OPEX Escalation Value (% / annum from Year 7)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_83">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>2630</y>
+          <width>108</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;9) Revenue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>930</y>
+          <width>148</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;4) Distances (km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_63">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>2030</y>
+          <width>155</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;7) Operating Costs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_87">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>2740</y>
+          <width>123</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;10) Financing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>820</y>
+          <width>197</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline;&quot;&gt;ML Link (BOIK - LEP) and LRB Link&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>497</y>
+          <width>369</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;3) Commodity - Coal (million tonnage per annum)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>1750</y>
+          <width>126</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;6)Capex Costs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>700</y>
+          <width>138</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline;&quot;&gt;ML Link (BRMY - BOIK)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>590</y>
+          <width>139</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline;&quot;&gt;ML Link (MMB - BRMY)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>308</y>
+          <width>167</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;2) General Assumptions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>1178</y>
+          <width>270</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; text-decoration: underline;&quot;&gt;5) Train Operating Assumptions (km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>2224</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_75">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>2320</y>
+          <width>189</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;8) Staff Costs and Numbers&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>145</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Assumptions 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptionsTableMKLink_MMBbrmy">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>620</y>
+          <width>1866</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptionsTableMKLink_brmyBoik">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>730</y>
+          <width>1861</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Opex_output">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>2320</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>560</y>
+          <width>168</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;100&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Tonnage / Annum Cap (MTPA)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="assumptionsDescription">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>297</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;1) Timing of operations:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The projections show that the company will:&lt;/p&gt;&lt;p&gt;incur initial expenditure in Years 1-4:&lt;/p&gt;&lt;p&gt;in order to build the track, bridges and facilities.&lt;/p&gt;&lt;p&gt;Rolling stock will be procured in Year 4:&lt;/p&gt;&lt;p&gt;whilst operations and payback of loan will start in Year 5.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>1493</y>
+          <width>1061</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_43">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Trips per Day&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_44">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (MMB - BRMY) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_45">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BRMY - BOIK)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_46">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BOIK - LEP)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_47">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LRB Link&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="assumptionsTrainOperatingAssumtions_3"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>1640</y>
+          <width>1131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_48">
+             <property name="maximumSize">
+              <size>
+               <width>230</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Locomotives and Wagon Requirements&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_49">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (MMB - BRMY) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_50">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BRMY - BOIK)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_51">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BOIK - LEP)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_52">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LRB Link&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="assumptionsTrainOperatingAssumtions_4"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>2070</y>
+          <width>419</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="operatingCosts2">
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_46">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Consumption (L/Km)</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_47">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_50">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Rand / L</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_51">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_52">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>USD / L</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_53">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>2110</y>
+          <width>395</width>
+          <height>194</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="operatingCosts1">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_24">
+           <item>
+            <widget class="QLabel" name="label_65">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Loco Maintenance Cost (per Loco-km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_66">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Wagon Maintenance Cost (per Wagon km)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_67">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Open Line Maintenance Cost (per Ton.km)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_68">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Signal Maintenance Cost (per Ton.km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_69">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Yard Line Maintenance Cost (per Ton.km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_70">
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Access Fee (per Ton.km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="assumptionLeOperatingcostsInput">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_54">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>USD</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="maintenanceWagonInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="maintenanceOpenLineInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="maintenanceSignalInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="maintenanceYardLineInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="maintenanceAccessFeeInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>1990</y>
+          <width>531</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="leTFRCapex15_18">
+         <item>
+          <widget class="QLineEdit" name="capex_TFR_output">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #FFD700; /* Darker yellow */
+    color: #FF0000; /* Red */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>TFR Capex 15/18</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="capex_TFR_number_output">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #FFD700; /* Darker yellow */
+    color: #FF0000; /* Red */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>263157894</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="TFR_7_Output">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #FFD700; /* Darker yellow */
+    color: #FF0000; /* Red */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>TFR Capex 7.8</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="TRF_Capex_7_number_output">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #FFD700; /* Darker yellow */
+    color: #FF0000; /* Red */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>10256316</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>1010</y>
+          <width>405</width>
+          <height>148</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Operating Distances (km)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; ML Link Weighted Route Km (MMB - BRMY) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; ML Link Weighted Route Km (BRMY - BOIK) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; ML Link Weighted Route Km (BOIK - LEP) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; LRB Link Weighted Route Km&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="assumptionsDistanceinputs">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_112">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string> Distance (km)  </string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="MMB_BRMY">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="BRMY_BOIK">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="BOIK_LEP">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="LRB">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>530</y>
+          <width>347</width>
+          <height>56</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;100&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;101&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Scenario 1 &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leTonnageS1_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;100&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;101&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Scenario 2&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leTonnageS2_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;100&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;101&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Scenario 3&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leTonnageS3_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>273</width>
+          <height>54</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="exhanceRateInput">
+         <item>
+          <layout class="QVBoxLayout" name="lblExchangeRate">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Exchange rate (R/USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Exchange rate (P/USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="leExchangeRate">
+           <item>
+            <widget class="QLineEdit" name="leExchangeR_USD">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="leExchangeP_USD">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>498</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="generalAssumptionsInputs">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; First year of Operation in the Model &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Operating Days per Annum &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Operating Shifts per Day &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Yard Track (km) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Access Road (km) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="leGeneralAssumptions">
+           <item>
+            <widget class="QLineEdit" name="firstYearInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="operatingDaysInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="operatingShiftsInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="yardTrackInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="accesRoadInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>550</y>
+          <width>403</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="startupTonnageYear6output">
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="maximumSize">
+            <size>
+             <width>262</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Start up tonnage in Year 6: ML Link (LRB Link) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leStartUpTonOutput">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>1040</y>
+          <width>405</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;CAPEX Distances (km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (Botswana - MMB - Limpopo)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (RSA - Limpopo to Lephalale/NSF Yard)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LRB Link Weighted Route Km&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="assumptionsCapexDistanceinputs">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_19">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string> Distance (km)  </string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="BotswanaInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="RSA_LimpopoInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="LRB_2_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>2780</y>
+          <width>359</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="financing1">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_43">
+           <item>
+            <widget class="QLabel" name="label_91">
+             <property name="maximumSize">
+              <size>
+               <width>230</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Initial Loan Amount&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_92">
+             <property name="maximumSize">
+              <size>
+               <width>230</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Present Value at Date of First Payment&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_93">
+             <property name="maximumSize">
+              <size>
+               <width>230</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Repayment Period&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_94">
+             <property name="maximumSize">
+              <size>
+               <width>230</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Repayment Amount per Annum&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLineEdit" name="Initital_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Value_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Repayment_input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="RepaymentAmount_Output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>2840</y>
+          <width>268</width>
+          <height>54</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_41">
+           <item>
+            <widget class="QLabel" name="label_88">
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Project Discount Rate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_89">
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Discount Rate Applied&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="financing2">
+           <item>
+            <widget class="QLineEdit" name="projectDiscount_input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="discountApplied_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>2370</y>
+          <width>644</width>
+          <height>275</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="StaffCost">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_76">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; Logistics Manager Salary (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="assumtionsStaffCost">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_28">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_66">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Rand (Monthly)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="logManage_Rand_Output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_30">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_68">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>USD (Annum)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="logManage_USD_Input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_31">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_74">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Number</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="logManage_Number_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_38">
+             <item>
+              <widget class="QLabel" name="label_77">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Train Control Salary (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_78">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shunter Salary (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_79">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Carriage and Wagon Staff (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="assumtionsStaffCost_2">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_32">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_76">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Rand (Monthly)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="trainControl_Rand_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="shunter_Rand_inout">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="carriage_Rand_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_33">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_78">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>USD (Annum)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="trainControl_USD_Output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="shunter_USD_output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="carriage_USD_Output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_34">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_80">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Number/Shift</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="trainControl_Number_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="shunter_Number_Input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="carriage_Number_Input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_39">
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_82">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Train Crew -&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_80">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Driver Salary (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_81">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Driver Assistant Salary (per annum)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="assumtionsStaffCost_3">
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_36">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_93">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>USD (Annum)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driver_USD_output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driverAssistant_USD_output">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_35">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_79">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Rand (Monthly)</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driver_Rand_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driverAssistant_Rand_Input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_37">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_97">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Number / Train</string>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driver_Number_input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="driverAssistant_Number_Input">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>2700</y>
+          <width>314</width>
+          <height>54</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="label_84">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Average Rate per Nett Ton.km&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="revenue1">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_67">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>USD</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="revenueRateNett_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>2700</y>
+          <width>433</width>
+          <height>54</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_85">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Revenue Escalation Value (% / annum from Year 7)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_86">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Market Study Benchmark Range (US Cents/Ton.km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="revenue2">
+           <item>
+            <widget class="QLineEdit" name="revenueEscalation_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="marketStudy_Output">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>0.025 to 0.035</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>2190</y>
+          <width>562</width>
+          <height>124</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <widget class="QLabel" name="label_71">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Annual Operating Cost - BRMY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_72">
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Light Locomotive Maintenance Facility (Opex)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_73">
+             <property name="maximumSize">
+              <size>
+               <width>279</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Light Wagon Repair / Maintenance Facility (Opex)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="operatingcosts3">
+           <item>
+            <layout class="QVBoxLayout" name="Rand_Cost_input">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_61">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Rand</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Rand_AnnualOperatingInput">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Rand_LocomotiveInput">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Rand_Wagon_input">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="USD_Cost_output">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_65">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>USD</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="USD_AnnualOperatingOutput">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="USD_LocomotiveOutput">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="USD_Wagon_Output">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>1810</y>
+          <width>440</width>
+          <height>166</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_54">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Loco (Each)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_55">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Wagon (Each)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_56">
+             <property name="maximumSize">
+              <size>
+               <width>225</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Infrastructure Cost (per km - Botswana)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_57">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Infrastructure Cost (weighted average per km - RSA)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_58">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Signals (per km)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_59">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Discretionary Capital&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="assumptionsLeCapexCost">
+           <item>
+            <widget class="QLineEdit" name="locoInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="wagonInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="infrastructureBotswanaInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="infrastructureRSAinput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="signalsInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="capitalOutput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>1860</y>
+          <width>663</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="infrastructureCapex">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Infrastructure Capex&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_60">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;BRMY Yard&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_61">
+             <property name="maximumSize">
+              <size>
+               <width>350</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Light Locomotive Maintenance Facility&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_62">
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Light Wagon Repair / Maintenance Facility &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="newBuildingsInput">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_31">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>New Buildings</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="BRMY_Input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="locomotiveInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="wagonRepairInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="randInput">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_40">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Rand</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_41">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="locomotive_RandInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="wagonRepair_RandInput">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="usd">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_44">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFB366;  /* Pastel Orange */
+    color: #000000;             /* Text Color */
+}
+</string>
+             </property>
+             <property name="text">
+              <string>USD</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="BRMY_USD_input">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #FFFF99;
+    color: #000000;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="locomotive_USD_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="wagonRepair_USD_output">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+</string>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>1360</y>
+          <width>1061</width>
+          <height>138</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Speed and Cycle Time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (MMB - BRMY) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_39">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BRMY - BOIK)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_40">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BOIK - LEP)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_41">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LRB Link&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_42">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Total Round Trip (MLRB)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="assumptionsTrainOperatingAssumtions_2"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>1220</y>
+          <width>1061</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_74">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Tonnages (20 tons/axle)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_90">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (MMB - BRMY) &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_118">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;345&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BRMY - BOIK)&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_119">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;ML Link (BOIK - LEP)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_120">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;LRB Link&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="assumptionsTrainOperatingAssumtions_1"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_110">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>780</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Don't Forget to Submit!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="assumtionsSubmit">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>810</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Assumptions2Tab">
+     <attribute name="title">
+      <string>Assumptions 2</string>
+     </attribute>
+     <widget class="QScrollArea" name="assumptions2scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1292</width>
+         <height>2082</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_99">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Assumptions 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table2">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>50</y>
+          <width>392</width>
+          <height>569</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>393</width>
+          <height>569</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>-637</x>
+          <y>-240</y>
+          <width>392</width>
+          <height>569</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table3">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>50</y>
+          <width>392</width>
+          <height>569</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>660</y>
+          <width>1231</width>
+          <height>231</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>920</y>
+          <width>1231</width>
+          <height>231</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>1170</y>
+          <width>1231</width>
+          <height>231</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>1440</y>
+          <width>1231</width>
+          <height>231</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="assumptions2Table8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>1710</y>
+          <width>1231</width>
+          <height>231</height>
+         </rect>
+        </property>
+       </widget>
+       <zorder>assumptions2Table1</zorder>
+       <zorder>label_99</zorder>
+       <zorder>assumptions2Table2</zorder>
+       <zorder>tableWidget_5</zorder>
+       <zorder>assumptions2Table3</zorder>
+       <zorder>assumptions2Table4</zorder>
+       <zorder>assumptions2Table5</zorder>
+       <zorder>assumptions2Table6</zorder>
+       <zorder>assumptions2Table7</zorder>
+       <zorder>assumptions2Table8</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="commodityCoalTab">
+     <attribute name="title">
+      <string>Commodity Coal</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1581</width>
+        <height>841</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1579</width>
+         <height>839</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_100">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Commodity Coal&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_101">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;Volumes (Mtpa)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="commodityTabTable">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>1571</width>
+          <height>251</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="commodityTabGraph">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>330</y>
+          <width>691</width>
+          <height>441</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="commodityTeuTab">
+     <attribute name="title">
+      <string>Commodity TEU</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>891</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1529</width>
+         <height>889</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_102">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Commodity TEU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="TEU_Table">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>1221</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="trainIndicesTab">
+     <attribute name="title">
+      <string>Train Indices</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>831</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1769</width>
+         <height>1189</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_103">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Train Indices&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>1721</width>
+          <height>788</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="trainIndiceTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="trainIndiceTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="trainIndiceTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="trainIndiceTable_4"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="StaffComplementTab">
+     <attribute name="title">
+      <string>Staff Complement</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1661</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1639</width>
+         <height>949</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_104">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Staff Complement&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>1621</width>
+          <height>788</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="staffTables">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="staffTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="staffTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="staffTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="staffTable_4"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="OperatingCostsTab">
+     <attribute name="title">
+      <string>Operating Costs </string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1521</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1849</width>
+         <height>1829</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_105">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Operating Costs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>1781</width>
+          <height>1382</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="operatingCostsTables">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <property name="topMargin">
+          <number>25</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_4"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_5"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_6"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_7"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_8"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="operatingCostsTabTable_9"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="capexTab">
+     <attribute name="title">
+      <string>Capex</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>831</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1619</width>
+         <height>1209</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_106">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Capex&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_107">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Rolling Stock and Track Accumulation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>1521</width>
+          <height>590</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="capexTables">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="capexTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="capexTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="capexTable_3"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="financingTab">
+     <attribute name="title">
+      <string>Financing</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1641</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1639</width>
+         <height>669</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_108">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Financing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="financingTabTable">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>1601</width>
+          <height>291</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mainenanceCostTab">
+     <attribute name="title">
+      <string>Maintenance Costs</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>1511</width>
+        <height>801</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1809</width>
+         <height>1849</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_109">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Maintenance Cost (USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>1711</width>
+          <height>1778</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="maintenanceCostTables">
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_4"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_5"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_6"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_7"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_8"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="maintenanceCostTable_9"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="transitCostsTab">
+     <attribute name="title">
+      <string>Transit Costs</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>851</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1809</width>
+         <height>1479</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_111">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Transit Cost (USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>1761</width>
+          <height>1382</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="transitCostsTabTables">
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_4"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_5"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_6"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="transitCostsTabTable_7"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="revenueTab">
+     <attribute name="title">
+      <string>Revenue</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>851</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_13">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1789</width>
+         <height>879</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_112">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Revenue (Mil USD)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>1691</width>
+          <height>788</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="revenueTabTables">
+         <item>
+          <widget class="QTableWidget" name="revenueTabTable_1"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="revenueTabTable_2"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="revenueTabTable_3"/>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="revenueTabTable_4"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PnLstatementTab">
+     <attribute name="title">
+      <string>P&amp;L Statement</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>861</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_14">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1689</width>
+         <height>2139</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_113">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;P&amp;amp;L Statement&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>550</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>800</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>1060</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="PnLstatmentTable_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>1320</y>
+          <width>1621</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="PnL_graph1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>1580</y>
+          <width>481</width>
+          <height>271</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="PnL_graph2">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>1560</y>
+          <width>771</width>
+          <height>471</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="kpiTab">
+     <attribute name="title">
+      <string>KPIs</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>841</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_15">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1669</width>
+         <height>839</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_114">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;KPIs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_115">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;1) Net Present Value (NPV)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="NPV_Table">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>1611</width>
+          <height>371</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_116">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>470</y>
+          <width>281</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; text-decoration: underline;&quot;&gt;2) Internal Rate of Return (IRR)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="IRR_Table">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>510</y>
+          <width>1611</width>
+          <height>261</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="breakevenTab">
+     <attribute name="title">
+      <string>Breakeven</string>
+     </attribute>
+     <widget class="QScrollArea" name="breakEvenScroll">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1531</width>
+        <height>851</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_16">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1749</width>
+         <height>849</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_117">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Breakeven&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="breakEvenTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>1611</width>
+          <height>281</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
